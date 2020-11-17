@@ -113,4 +113,8 @@ public class Artista {
     public int hashCode() {
         return (int) (id ^ (id >>> 32));
     }
+
+    public String getNombreCompleto() {
+        return this.nombre + " " + this.apellidos;
+    }
 }
